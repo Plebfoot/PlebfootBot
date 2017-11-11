@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!ping'){
-      bot.sendMessage('Pong!')
+      message.reply('Pong!')
     }
 });
 
