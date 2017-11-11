@@ -1,13 +1,14 @@
 {
-  "name"; "Test"
-  "description": "Test",
-  "version": "0.0.0",
+  "name": "Test",
+  "version": "1.0.0",
+  "description": "boii",
   "main": "bot.js",
-  "scripts": {
-      "start": "node bot.js"
-   },
-   "dependencies": {
-        "discord.js'': "11.1.0"
-        "request": "2.81.0"
-   }
+    "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "me",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "11.2.1"
+  }
 }
