@@ -8,8 +8,10 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping'){
       message.reply('pomg')
-    }
-      if(command === "purge") {
+    }     
+});
+
+ if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
@@ -23,8 +25,7 @@ client.on('message', message => {
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
-      
-});
+ });
 
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
