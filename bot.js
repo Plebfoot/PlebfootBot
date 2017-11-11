@@ -13,7 +13,7 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!geefgeld'){
-      message.reply('http://www.paypal.me/Tjony')
+      message.SendMessage('http://www.paypal.me/Tjony')
     }
 });
 
