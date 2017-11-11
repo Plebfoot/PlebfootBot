@@ -8,7 +8,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.substring(0, 1) == '!') {
     if (message.content === 'ping'){
-      message.reply('pong')
+      bot.sendMessage({to: channelID,
+                    message: 'Pong!'
+                });
     }     
 });
 // THIS MUST BE THIS WAY
