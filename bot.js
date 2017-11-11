@@ -6,12 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.substring(0, 1) == '!') {
-    if (message.content === 'ping'){
-      bot.sendMessage({to: channelID,
-                    message: 'Pong!'
-                });
-    }     
+    if (message.content === '!ping'){
+      bot.sendMessage('Pong!')
+    }
 });
+
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
