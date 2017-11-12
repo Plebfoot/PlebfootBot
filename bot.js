@@ -7,13 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!ping'){
-    message.reply('Pong!');
+   message.channel.send('Pong!');
     }
 });
 
  client.on('message', message => {
     if (message.content === '!geefgeld'){
-      message.reply('http://www.paypal.me/Tjony')
+      message.channel.send('http://www.paypal.me/Tjony')
     }
 });
 // THIS MUST BE THIS WAY
