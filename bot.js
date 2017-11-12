@@ -17,12 +17,9 @@ client.on('message', message => {
     }
 });
 
-  client.on('message', message => {
+ client.on('message', message => {
     if (message.content === '!help'){
-      message.channel.send(''Dit zijn de commands!
-                             !help, Kom je hier uit. 
-                             !ping, Kan je kijken of de bot werkt.
-                             !geefgeld, Is gewoon een trol command.'')
+      message.channel.send('Alle commands: !help, kom je hier uit. !ping, kunnen allen mods gebruiken. !geefgeld, is eigenlijk gewoon een troll command. ')
     }
 });
 // THIS MUST BE THIS WAY
