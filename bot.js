@@ -22,5 +22,12 @@ client.on('message', message => {
       message.channel.send('Alle commands: !help, kom je hier uit. !ping, kunnen allen mods gebruiken. !geefgeld, is eigenlijk gewoon een troll command. ')
     }
 });
+
+
+ client.on('message', message => {
+    if (message.content === '!youtube'){
+      message.channel.send('Volg Tony ook even op YouTube!: https://www.youtube.com/user/Dutchspookygames')
+    }
+});
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
