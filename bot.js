@@ -23,10 +23,15 @@ client.on('message', message => {
     }
 });
 
-
  client.on('message', message => {
     if (message.content === '!youtube'){
       message.channel.send('Volg Tony ook even op YouTube!: https://www.youtube.com/user/Dutchspookygames')
+    }
+});
+
+ client.on('message', message => {
+    if (message.content === '!twitch'){
+      message.channel.send('Volg Tony ook even op Twitch! http://www.twitch.tv/tonydoet')
     }
 });
 // THIS MUST BE THIS WAY
